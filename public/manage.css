@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-title a {
+    font-family: 'Gungsuh', '궁서', serif; 
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 20px; 
+}
+
+.admin-info, button {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.content-area {
+    display: flex;
+    border: 1px solid #ccc;
+}
+
+.category-box, .post-area {
+    padding: 10px;
+}
+
+.category-box {
+    width: 33.33%;
+    border-right: 1px solid #ccc;
+}
+
+.post-area {
+    width: 66.67%;
+}
+
+.category-box h2 a, .pagination a {
+    color: #333;
+    text-decoration: none;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+.search-box {
+    display: flex;
+    margin-left: auto;
+}
+
+.search-box input {
+    padding: 5px;
+    margin-right: 2px;
+}
+
+.search-btn, button {
+    font-size: 14px;
+    padding: 6px 12px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+}
+
+.post-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.post-list th, .post-list td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-list th {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a:hover {
+    background-color: #f2f2f2;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #337ab7;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+}
+
+.btn-add {
+    background-color: #5cb85c;
+}
+
+.btn-logout {
+    background-color: #ffffff; 
+    color: #000000; 
+    border: 1px solid #000000;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+}

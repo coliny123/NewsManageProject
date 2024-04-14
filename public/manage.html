@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 화면</title>
+    <link rel="stylesheet" type="text/css" href="manage.css">
+</head>
+<body>
+	<header>
+	    <div class="project-title">
+	        <a href="index.html">뉴스 관리&게시 프로젝트</a>
+	    </div>
+        <div class="admin-info">
+        	관리자: 관리자이름 <button class="btn-logout">로그아웃</button>
+        </div>
+	</header>
+
+
+    <main>
+        <div class="content-area">
+            <div class="category-box">
+                <h2><a href="categoryManage.html">카테고리 관리</a></h2>
+                <ul>
+                    <li>
+                        <span class="category-name">스포츠</span>
+                        <ul>
+                            <li>국내야구</li>
+                            <li>국내축구</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="category-name">경제</span>
+                        <ul>
+                            <li>금융</li>
+                            <li>증권</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="post-area">
+                <div class="search-bar">
+                    <span class="category-title">분류: 카테고리 명</span>
+                    <div class="search-box">
+                        <input type="text" placeholder="검색어를 입력하세요">
+                        <button type="button" class="btn search-btn">검색</button>
+                        <button type="button" class ="btn">뉴스 추가</button>
+                    </div>
+                </div>
+                <div class="post-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Image</th>
+                                <th>제목</th>
+                                <th>등록상태</th>
+                                <th>취재일</th>
+                                <th>최종 수정일</th>
+                                <th>관리</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="center">1</td>
+                                <td class="center"><a href="detail.html"><img src="images/nature1.png" alt="1st Image" width="100px" height="100px"></a></td>
+                                <td>글 제목 1</td>
+                                <td class="center">등록대기</td>
+                                <td class="center">2023-05-01</td>
+                                <td class="center">2023-05-01</td>
+							<td class="center">
+							    <button class="btn btn-primary">수정</button>
+							    <button class="btn btn-danger">삭제</button>
+							</td>
+                            </tr>
+                            <!-- 최대 20개 -->
+                        </tbody>
+                    </table>
+                </div>
+                <footer>
+                    <div class="pagination">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
